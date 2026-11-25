@@ -330,7 +330,7 @@ h1 span, h2 span {
 
     .hero {
         min-height: 100svh;
-        padding: 100px 5% 60px;
+        padding: 40px 5% 60px;
 
         background-size: cover;
         background-position: 70% center;
