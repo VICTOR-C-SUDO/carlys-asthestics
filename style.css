@@ -326,11 +326,11 @@ h1 span, h2 span {
    MOBILE RESPONSIVENESS
 ========================= */
 
-@media (max-width: 768px) {
+@media (max-width: 460px) {
 
     .hero {
         min-height: 100svh;
-        padding: 10px 5% 60px;
+        padding: 10px 5% 1px;
 
         background-size: cover;
         background-position: 70% center;
