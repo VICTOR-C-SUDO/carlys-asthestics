@@ -326,7 +326,7 @@ h1 span, h2 span {
    MOBILE RESPONSIVENESS
 ========================= */
 
-@media (max-width: 460px) {
+@media (max-width: 400px) {
 
     .hero {
         min-height: 100svh;
@@ -351,7 +351,7 @@ h1 span, h2 span {
     .hero-content .subtitle {
         font-size: 13px;
         letter-spacing: 4px;
-        margin-bottom: 20px;
+        margin-bottom: 200px;
     }
 
     .hero-content h1 {
