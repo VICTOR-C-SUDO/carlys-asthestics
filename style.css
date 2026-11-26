@@ -207,19 +207,21 @@ h1 span, h2 span {
     display: flex;
     align-items: center;
     overflow: hidden;
-    background-image: 
+
+    background-image:
         linear-gradient(
             to right,
-            rgba(0, 0, 0, 0.95) 0%,
-            rgba(0, 0, 0, 0.78) 45%,
-            rgba(0, 0, 0, 0.35) 100%
+            rgba(0, 0, 0, 0.92) 0%,
+            rgba(0, 0, 0, 0.75) 45%,
+            rgba(0, 0, 0, 0.45) 100%
         ),
         url('Glamorous Pink Crystal Manicure.png');
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 50px 7% 80px;
+
+    padding: 70px 7%;
 }
 
 /* HERO CONTENT */
@@ -233,9 +235,9 @@ h1 span, h2 span {
 
 .hero-content .subtitle {
     color: #ec4899;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 25px;
 }
@@ -258,16 +260,16 @@ h1 span, h2 span {
     font-size: 22px;
     line-height: 1.8;
     max-width: 650px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 }
 
 /* HERO BUTTONS */
 
 .hero-buttons {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .hero-buttons a {
@@ -275,14 +277,17 @@ h1 span, h2 span {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+
     padding: 18px 35px;
-    border-radius: 18px;
+    border-radius: 16px;
+
     font-size: 18px;
     font-weight: 700;
-    transition: 0.3s ease;
+
+    transition: all 0.3s ease;
 }
 
-/* WHATSAPP BUTTON */
+/* PRIMARY BUTTON */
 
 .btn-primary {
     background: #db2785;
@@ -296,7 +301,7 @@ h1 span, h2 span {
     box-shadow: 0 10px 30px rgba(219, 39, 133, 0.3);
 }
 
-/* GALLERY BUTTON */
+/* SECONDARY BUTTON */
 
 .btn-secondary {
     background: transparent;
@@ -323,25 +328,15 @@ h1 span, h2 span {
 }
 
 /* =========================
-   MOBILE RESPONSIVENESS
+   TABLETS
 ========================= */
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
 
     .hero {
-        min-height: 100svh;
-        padding: 10px 5% 1px;
-
-        background-size: cover;
+        min-height: auto;
+        padding: 65px 6%;
         background-position: 70% center;
-
-        background-image:
-            linear-gradient(
-                to right,
-                rgba(0, 0, 0, 0.88),
-                rgba(0, 0, 0, 0.50)
-            ),
-            url('images/nails-hero.jpg');
     }
 
     .hero-content {
@@ -349,69 +344,132 @@ h1 span, h2 span {
     }
 
     .hero-content .subtitle {
-        font-size: 13px;
-        letter-spacing: 4px;
-        margin-bottom: 200px;
+        font-size: 14px;
+        letter-spacing: 3px;
+        margin-bottom: 25px;
     }
 
     .hero-content h1 {
-        font-size: clamp(42px, 11vw, 60px);
-        line-height: 1.15;
+        font-size: clamp(42px, 8vw, 65px);
     }
 
     .hero-content p {
-        font-size: 18px;
+        font-size: 19px;
         line-height: 1.7;
-        margin-bottom: 30px;
     }
 
     .hero-buttons {
         gap: 15px;
-        margin-bottom: 40px;
+        margin-bottom: 35px;
+    }
+
+    .hero-buttons a {
+        padding: 17px 25px;
+        font-size: 17px;
+    }
+
+    .hero-features {
+        gap: 20px;
+    }
+
+    .hero-features span {
+        font-size: 16px;
+    }
+}
+
+/* =========================
+   MOBILE PHONES
+========================= */
+
+@media (max-width: 480px) {
+
+    .hero {
+        min-height: auto;
+        height: auto;
+
+        padding: 45px 5% 55px;
+
+        background-size: cover;
+        background-position: 75% center;
+
+        background-image:
+            linear-gradient(
+                to right,
+                rgba(0, 0, 0, 0.90),
+                rgba(0, 0, 0, 0.70)
+            ),
+            url('Glamorous Pink Crystal Manicure.png');
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content .subtitle {
+        font-size: 12px;
+        letter-spacing: 3px;
+        line-height: 1.8;
+        margin-bottom: 22px;
+    }
+
+    .hero-content h1 {
+        font-size: 43px;
+        line-height: 1.15;
+        margin-bottom: 20px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+        line-height: 1.7;
+        margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 35px;
     }
 
     .hero-buttons a {
         width: 100%;
+        box-sizing: border-box;
         padding: 17px 20px;
         font-size: 17px;
         border-radius: 15px;
     }
 
     .hero-features {
-        gap: 18px;
+        gap: 15px 20px;
     }
 
     .hero-features span {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
-/* SMALL PHONES */
+/* =========================
+   VERY SMALL PHONES
+========================= */
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
 
     .hero {
-        background-position: 75% center;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding: 35px 5% 45px;
     }
 
     .hero-content h1 {
-        font-size: 43px;
+        font-size: 38px;
     }
 
     .hero-content p {
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .hero-content .subtitle {
-        letter-spacing: 3px;
+        letter-spacing: 2px;
     }
 }
 
-/* ==============
-/* =================
-========================= */
 
 .gallery-section {
   background: transparent;
